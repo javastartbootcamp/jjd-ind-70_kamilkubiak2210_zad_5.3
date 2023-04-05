@@ -5,6 +5,11 @@ public class ProductPriceVat {
     public double convertNetToGross(Product product) {
         double getNetPrice = product.getNetPrice();
         String category = product.getCategory();
+        double universalPrice = getNetPrice * 1.10;
+
+        if (category == null) {
+            return universalPrice;
+        }
 
         switch (category) {
 
@@ -15,10 +20,7 @@ public class ProductPriceVat {
                 return getNetPrice * 1.20;
             }
             default -> {
-                return getNetPrice * 1.10;
-            }
-            case null -> {
-                return getNetPrice * 1.10;
+                return universalPrice;
             }
         }
     }

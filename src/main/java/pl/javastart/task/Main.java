@@ -6,7 +6,7 @@ public class Main {
 
         Product product1 = new Product("Carlsberg", "piwo", 5, "piwa");
         Product product2 = new Product("Snickers", "baton", 4, "słodycze");
-        Product product3 = new Product("Wymarzony dom", "książka", 10, "książki");
+        Product product3 = new Product("Wymarzony dom", "książka", 10, null);
 
         ProductPriceVat productPriceVat = new ProductPriceVat();
 
