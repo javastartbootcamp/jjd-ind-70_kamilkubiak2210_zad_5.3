@@ -6,14 +6,12 @@
 
     <artifactId>task</artifactId>
     <version>1.0</version>
-
     <repositories>
         <repository>
             <id>repsy</id>
             <url>https://repo.repsy.io/mvn/javastartpl/default</url>
         </repository>
     </repositories>
-
     <parent>
         <groupId>pl.javastart</groupId>
         <artifactId>task-parent</artifactId>
