@@ -1,6 +1,9 @@
 package pl.javastart.task;
 
 public class Product {
+    public static final String CATEGORY_BEER = "piwa";
+    public static final String CATEGORY_SWEETS = "słodycze";
+
     private final String name;
     private final String description;
     private final double netPrice;
